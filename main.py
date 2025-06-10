@@ -7,8 +7,9 @@ app = FastAPI()
 
 class Account(BaseModel):
     id: int
-    name: str
-    surname:str
+    type: str
+    person_name:str
+    address:str
 
 # type hint for a list of accounts
 accounts:list[Account] = []
